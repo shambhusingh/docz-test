@@ -1,0 +1,44 @@
+---
+name: Button
+menu: Components
+---
+
+import { PropsTable } from 'docz'
+import Button from '../components/Button'
+import StateButton from '../components/StateButton'
+
+
+## Simple primary button
+### PropTable of Button
+<PropsTable of={Button} />
+<Button 
+  className='primary' 
+  onClick={() => alert('hi there')}>
+  Shows alert
+</Button>
+
+
+## Simple secondary button
+### PropTable of Button
+<PropsTable of={Button} />
+<Button 
+  className='secondary' 
+  onClick={() => alert('hi there')}>
+  Shows alert
+</Button>
+
+## Simple red button
+### PropTable of Button
+<PropsTable of={Button} />
+<Button 
+  className="red"
+  onClick={() => alert('hi there')}>
+  Shows alert
+</Button>
+
+
+## Button with state
+### PropTable of Button
+<PropsTable of={StateButton} />
+
+<StateButton>Click me for state change.</StateButton>

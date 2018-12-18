@@ -1,0 +1,24 @@
+---
+name: Date Range
+menu: Components
+fullpage: false
+---
+
+import moment from 'moment'
+import { PropsTable } from 'docz'
+import DateRange from '../components/DateRange'
+
+# Date Range Filter
+
+### PropTable of Date Range Filter
+
+<PropsTable of={DateRange} />
+
+<DateRange {...{
+  startDate: new Date(), 
+  endDate: new Date(), 
+  event: {
+    end_date: moment().add(2, 'd')._d, 
+    start_date: moment().subtract(2, 'd')._d 
+  }
+}} />

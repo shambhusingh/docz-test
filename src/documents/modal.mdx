@@ -1,0 +1,24 @@
+---
+name: Profile Modal
+menu: Components
+route: /
+---
+
+# Image Modal
+
+Hello, I'm a Modal!
+
+
+import { Button, Header, Image, Modal } from 'semantic-ui-react'
+
+<Modal trigger={<Button>Show Modal</Button>}>
+  <Modal.Header>Profile Details</Modal.Header>
+  <Modal.Content image>
+    <Image wrapped size='medium' src='https://avatars3.githubusercontent.com/u/3778704' />
+    <Modal.Description>
+      <Header>Profile Header</Header>
+      <p>Lorem Ipsum is simply dummy text.</p>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry, Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+    </Modal.Description>
+  </Modal.Content>
+</Modal>
