@@ -2,7 +2,15 @@ import React, {Component} from 'react'
 import PropTypes from 'prop-types'
 import {Button as SUButton} from 'semantic-ui-react'
 
-const classes = ['primary', 'secondary', 'inverse', 'red', 'green', 'yellow', 'pink']
+const classes = [
+  'primary',
+  'secondary',
+  'inverse',
+  'red',
+  'green',
+  'yellow',
+  'pink',
+]
 
 class Button extends Component {
   state = {className: 'primary'}
@@ -11,7 +19,7 @@ class Button extends Component {
     this.setState({className})
   }
 
-  render () {
+  render() {
     const {children} = this.props
     const {className} = this.state
     return (
@@ -24,12 +32,12 @@ class Button extends Component {
 
 Button.defaultProps = {
   children: null,
-  className: 'primary'
+  className: 'primary',
 }
 
 Button.propTypes = {
   onClick: PropTypes.func.isRequired,
-  children: PropTypes.element.isRequired
+  children: PropTypes.element.isRequired,
 }
 
 export default Button

@@ -5,11 +5,21 @@
   "license": "MIT",
   "scripts": {
     "docz:dev": "docz dev",
-    "docz:prod": "docz prod"
+    "docz:prod": "docz prod",
+    "prettify": "prettier --write \"**/*.+(js|json|css)\"",
+    "precommit": "lint-staged"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "devDependencies": {
     "docz": "^0.12.16",
-    "docz-plugin-css": "^0.11.0"
+    "docz-plugin-css": "^0.11.0",
+    "husky": "^1.2.1",
+    "lint-staged": "^8.1.0",
+    "prettier": "^1.15.3"
   },
   "dependencies": {
     "moment": "^2.23.0",
