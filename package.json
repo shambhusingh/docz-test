@@ -8,12 +8,11 @@
     "test:watch": "jest --watch",
     "docz:dev": "docz dev",
     "docz:prod": "docz prod",
-    "prettify": "prettier --write \"**/*.+(js|json|css)\"",
-    "precommit": "lint-staged & yarn test"
+    "prettify": "prettier --write \"**/*.+(js|json|css)\""
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged & yarn test"
     }
   },
   "devDependencies": {
